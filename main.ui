@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>662</width>
+    <width>829</width>
     <height>552</height>
    </rect>
   </property>
@@ -17,7 +17,7 @@
    <widget class="QPushButton" name="Cargar_BTN">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>530</x>
       <y>10</y>
       <width>131</width>
       <height>51</height>
@@ -36,7 +36,7 @@
    <widget class="QPushButton" name="Analizar_BTN">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>680</x>
       <y>10</y>
       <width>131</width>
       <height>51</height>
@@ -57,7 +57,7 @@
      <rect>
       <x>20</x>
       <y>90</y>
-      <width>621</width>
+      <width>591</width>
       <height>241</height>
      </rect>
     </property>
@@ -74,7 +74,7 @@
    <widget class="QPushButton" name="Prev_BTN">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>70</x>
       <y>480</y>
       <width>81</width>
       <height>51</height>
@@ -93,7 +93,7 @@
    <widget class="QPushButton" name="Next_BTN">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>470</x>
       <y>480</y>
       <width>81</width>
       <height>51</height>
@@ -112,7 +112,7 @@
    <widget class="QPushButton" name="Pause_BTN">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>170</x>
       <y>480</y>
       <width>81</width>
       <height>51</height>
@@ -131,7 +131,7 @@
    <widget class="QPushButton" name="Play_BTN">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>270</x>
       <y>480</y>
       <width>81</width>
       <height>51</height>
@@ -150,7 +150,7 @@
    <widget class="QPushButton" name="Stop_BTN">
     <property name="geometry">
      <rect>
-      <x>390</x>
+      <x>370</x>
       <y>480</y>
       <width>81</width>
       <height>51</height>
@@ -171,7 +171,7 @@
      <rect>
       <x>20</x>
       <y>350</y>
-      <width>621</width>
+      <width>591</width>
       <height>121</height>
      </rect>
     </property>
@@ -187,6 +187,41 @@
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Technic'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;INFORMACION&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="Lista">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>70</y>
+      <width>181</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Terminal</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Reporte_BTN">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>10</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Terminal</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>REPORTE</string>
     </property>
    </widget>
   </widget>

@@ -1,0 +1,34 @@
+replist = 'mi lista 2021 :D' => (
+    {
+        genero: 'genero1',
+        nombre : 'cancion1',
+        artista: "artista1",
+        ruta: 'musica\cancion1.mp3',
+        anio: 2001
+        repetir: 2,*
+        
+    },%{
+        nombre : 'cancion2',
+        artista: 'artista2',¡¡¡¡¡
+        ruta: 'musica/cancion2.mp3',
+        genero: "genero2",
+        repetir: 2,
+        anio: 2017
+    }
+    ,%{
+        nombre : 'cancion3',
+        artista: 'artista3',¡¡¡¡¡
+        ruta: 'musica/cancion3.mp3',
+        genero: "genero3",
+        repetir: 2,
+        anio: 2019
+    }
+    ,%{
+        nombre : 'cancion4',
+        artista: 'artista4',¡¡¡¡¡
+        ruta: 'musica/cancion4.mp3',
+        genero: "genero4",
+        repetir: 2,
+        anio: 2010
+    }
+)¿¿¿¿¿;
