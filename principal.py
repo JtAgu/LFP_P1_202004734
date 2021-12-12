@@ -12,6 +12,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from AnalizadorLexico import AnalizadorLexico
 from PyQt5.QtWidgets import QFileDialog, QMessageBox , QListView
 from PyQt5.QtGui import QIcon, QImage, QPixmap
+from PyQt5.QtGui import * 
+from PyQt5.QtCore import * 
 from Canciones import Cancion
 from pygame import mixer 
 import time
@@ -115,14 +117,14 @@ class Ui_MainWindow(object):
         self.informacion_Area.setObjectName("informacion_Area")
         self.informacion_Area.setReadOnly(True)
 
-        self.ListaCanciones = QtWidgets.QTextEdit(self.centralwidget)
-        self.ListaCanciones.setReadOnly(True)
-        self.ListaCanciones.setGeometry(QtCore.QRect(630, 70, 181, 461))
+        self.listWidget = QtWidgets.QListWidget(self.centralwidget)
+        
+        self.listWidget.setGeometry(QtCore.QRect(630, 70, 181, 461))
         font = QtGui.QFont()
         font.setFamily("Terminal")
         font.setPointSize(10)
-        self.ListaCanciones.setFont(font)
-        self.ListaCanciones.setObjectName("ListaCanciones")
+        self.listWidget.setFont(font)
+        self.listWidget.setObjectName("ListaCanciones")
         self.Reporte_BTN = QtWidgets.QPushButton(self.centralwidget)
         self.Reporte_BTN.setGeometry(QtCore.QRect(380, 10, 131, 51))
         font = QtGui.QFont()
@@ -162,6 +164,9 @@ class Ui_MainWindow(object):
         self.Play_BTN.setText(_translate("MainWindow", "PLAY"))
         self.Stop_BTN.setText(_translate("MainWindow", "STOP"))
         MainWindow.setWindowTitle("REPRODUCTOR MP3")
+        
+        self.listWidget.addItem("LISTA DE CANCIONES")
+        
         self.informacion_Area.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -250,8 +255,8 @@ class Ui_MainWindow(object):
             i+=1
         info=""
         for x in self.Canciones:
-            info+=x.nombre+"\n"
-        self.ListaCanciones.setText(info)
+            self.listWidget.addItem(x.nombre)
+        
             
         
     def PlayMusica(self):
