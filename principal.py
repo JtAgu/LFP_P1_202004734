@@ -296,6 +296,8 @@ class Ui_MainWindow(object):
     def NextMusica(self):
         mixer.music.stop()
         mixer.music.unload()
+        self.Pause_BTN.setDisabled(False)
+        self.Play_BTN.setDisabled(True)
         self.idMusica+=1
         if self.idMusica==len(self.Canciones):
             self.idMusica=0
@@ -309,6 +311,8 @@ class Ui_MainWindow(object):
     def PrevMusica(self):
         mixer.music.stop()
         mixer.music.unload()
+        self.Pause_BTN.setDisabled(False)
+        self.Play_BTN.setDisabled(True)
         self.idMusica-=1
         if self.idMusica<0:
             self.idMusica=len(self.Canciones)-1
